@@ -3,6 +3,7 @@ import About from "./sections/About/About";
 import Nav from "./sections/Navbar/Nav";
 import Footer from "./sections/Footer/Footer";
 import FAQ from "./sections/FAQ/FAQ";
+import Team from "./sections/Team/Team";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Jumbotron/>
       <About/>
       <FAQ/>
+      <Team/>
       <Footer/>
     </div>
   );
