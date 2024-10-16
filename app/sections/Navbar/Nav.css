@@ -1,23 +1,36 @@
 nav {
-    position:absolute;
+    position:fixed;
     display: flex;
+    flex-direction: row;
     flex-wrap:wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 2rem 1rem 2rem;
+    /*justify-content: space-between;*/
+    /*justify-content: flex-start;*/
+    padding: 1rem 2rem 1rem 2rem;
     z-index:2;
     background-color:transparent;
     /* backdrop-filter: blur(1rem); */
-    top:0;
+    transition: top 0.3s;
+    top: 0;
     width:100%;
 }
 
-nav .collapse-menu {
+.collapse-menu {
     display: flex;
+    flex:1;
+    margin-right: 4rem;
+    flex-direction:row;
+    justify-content: space-between;
     z-index: 1;
-    margin:0rem 5rem 0rem 0rem;
     
     /* background-color:#755642; */
+}
+
+nav .collapse-menu div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
 }
 
 /* style li components in navbar */
@@ -25,7 +38,7 @@ nav .collapse-menu li {
     display:flex;
     /* align-items: center;
     justify-content: center; */
-    padding: 1rem;
+    padding: .5rem 1rem;
     z-index: 10000;
     color:#FFE9D7;
 }
@@ -62,7 +75,7 @@ input[type=checkbox] {
 }
 
 /* === media queries === */
-@media (max-width: 930) {
+@media (max-width: 12vw) {
     .mlh-trust-badge {
         width: 11vw;
     }
@@ -102,7 +115,7 @@ input[type=checkbox] {
         right:0;
         color:#FFE9D7;
         /* padding:0.5rem 2rem 0rem 0rem; */
-        margin:0rem 7rem 1rem 0rem;
+        margin:0rem 5rem 1rem 1rem;
     }
     .hamburger:hover {
         cursor: pointer;
@@ -146,7 +159,7 @@ input[type=checkbox] {
         right:0;
         color:#FFE9D7;
         /* padding:0.5rem 2rem 0rem 0rem; */
-        margin:0rem 7rem 1rem 0rem;
+        margin:0rem 5rem 1rem 1rem;
     }
     .hamburger:hover {
         cursor: pointer;
@@ -181,6 +194,11 @@ input[type=checkbox] {
         padding:0.5rem;
     }
 
+    nav .collapse-menu li {
+        display:flex;
+        padding:0.25rem;
+    }
+
     input[type=checkbox]:checked~.collapse-menu {
         display: block;
         z-index: 1; 
@@ -200,7 +218,7 @@ input[type=checkbox] {
         right:0;
         color:#FFE9D7;
         /* padding:0.5rem 2rem 0rem 0rem; */
-        margin:0rem 5rem 1rem 0rem;
+        margin:0rem 5rem 1rem 1rem;
     }
     .hamburger:hover {
         cursor: pointer;
