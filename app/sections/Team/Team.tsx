@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import './Team.css';
 
 function Team() {
@@ -9,27 +8,27 @@ function Team() {
     { name: 'Clowie', role: 'Director', image: '/static/images/clowie.png' },
     { name: 'Kelly Trinh', role: 'Development Director', image: '/static/images/kelly.png' },
     { name: 'Rita Kaushik', role: 'Marketing Directior', image: '/static/images/rita.png' },
-    { name: 'Mansi Patel', role: 'Experience Director', image: 'path/to/image.jpg' },
+    { name: 'Mansi Patel', role: 'Experience Director', image: '/static/images/mansi.png' },
     { name: 'Pranavi Kanderi', role: 'Industry Director', image: '/static/images/pranavi.png' },
-    { name: 'Sajween Khan', role: 'Logistics Director', image: 'path/to/image.jpg' },
-    { name: 'Sneha Bista', role: 'Development Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Clara Conner', role: 'Development Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Safia Sharif', role: 'Development Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Jaszmine DeFranco', role: 'Development Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Laasya Gudisa', role: 'Development Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Samridhi Ganguly', role: 'Marketing Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Susan Zhang', role: 'Marketing Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Zara Iqbal', role: 'Marketing Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Sisira Aarukapalli', role: 'Experience Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Maheen Ferdouse', role: 'Experience Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Megan Vu', role: 'Experience Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Shivani Zala', role: 'Experience Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Sanjana Kotha', role: 'Industry Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Sachita Chaliki', role: 'Industry Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Shreya Ram', role: 'Industry Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Elisa Paul', role: 'Industry Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Rachana Mohan', role: 'Logistics Coordinator', image: 'path/to/image.jpg' },
-    { name: 'Lasya Nagisetty', role: 'Logistics Coordinator', image: 'path/to/image.jpg' },
+    { name: 'Sajween Khan', role: 'Logistics Director', image: '/static/images/sajween.png' },
+    { name: 'Sneha Bista', role: 'Development Coordinator', image: '/static/images/sneha.png' },
+    { name: 'Clara Conner', role: 'Development Coordinator', image: '/static/images/clara.png' },
+    { name: 'Safia Sharif', role: 'Development Coordinator', image: '/static/images/safia.png' },
+    { name: 'Jaszmine DeFranco', role: 'Development Coordinator', image: '/static/images/jaszmine.png' },
+    { name: 'Laasya Gudisa', role: 'Development Coordinator', image: '/static/images/laasya.png' },
+    { name: 'Samridhi Ganguly', role: 'Marketing Coordinator', image: '/static/images/samridhi.png' },
+    { name: 'Susan Zhang', role: 'Marketing Coordinator', image: '/static/images/susan.png' },
+    { name: 'Zara Iqbal', role: 'Marketing Coordinator', image: '/static/images/zara.png' },
+    { name: 'Sisira Aarukapalli', role: 'Experience Coordinator', image: '/static/images/sisira.png' },
+    { name: 'Maheen Ferdouse', role: 'Experience Coordinator', image: '/static/images/maheen.png' },
+    { name: 'Megan Vu', role: 'Experience Coordinator', image: '/static/images/megan.png' },
+    { name: 'Shivani Zala', role: 'Experience Coordinator', image: '/static/images/shivani.png' },
+    { name: 'Sanjana Kotha', role: 'Industry Coordinator', image: '/static/images/sanjana.png' },
+    { name: 'Sachita Chaliki', role: 'Industry Coordinator', image: '/static/images/sachita.png' },
+    { name: 'Shreya Ram', role: 'Industry Coordinator', image: '/static/images/shreya.png' },
+    { name: 'Elisa Paul', role: 'Industry Coordinator', image: '/static/images/elisa.png' },
+    { name: 'Rachana Mohan', role: 'Logistics Coordinator', image: '/static/images/rachana.png' },
+    { name: 'Hemal Pathak', role: 'Logistics Coordinator', image: '/static/images/hemal.png' },
   ];
 
   const [currentSet, setCurrentSet] = useState(0);
