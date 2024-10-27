@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
-import { Inknut_Antiqua, Nunito } from "next/font/google";
+import { Inknut_Antiqua, Nunito, Junge, Julius_Sans_One} from "next/font/google";
 import "./globals.css";
 import Script from  "next/script"
 
@@ -12,6 +12,20 @@ const inknut = Inknut_Antiqua({
   weight:'400',
   subsets: ['devanagari'],
   variable: '--font-inknut-antiqua'
+});
+
+// Add Junge font
+const junge = Junge({
+  subsets: ["latin"],
+  variable: "--font-junge",
+  weight: "400"
+});
+
+// Add Julius Sans One font
+const julius_sans = Julius_Sans_One({
+  subsets: ["latin"],
+  variable: "--font-julius-sans-one",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +57,7 @@ export default function RootLayout({
         </Script>
 
       </head>
-      <body className={`${nunito.variable} ${inknut.variable}`}>{children}</body>
+      <body className={`${nunito.variable} ${inknut.variable} ${junge.variable} ${julius_sans.variable}`}>{children}</body>
     </html>
   );
 }
