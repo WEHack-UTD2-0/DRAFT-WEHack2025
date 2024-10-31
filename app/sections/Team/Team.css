@@ -1,0 +1,17 @@
+.team-title {
+    text-shadow: 0rem 0rem 3rem white;
+}
+
+.bg-white {
+    background-color: #FFE9D7;
+}
+
+.text-xl {
+    color: #4A3628;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}

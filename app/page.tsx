@@ -4,6 +4,7 @@ import Sponsor from "./sections/Sponsor/Sponsor";
 import Nav from "./sections/Navbar/Nav";
 import Footer from "./sections/Footer/Footer";
 import FAQ from "./sections/FAQ/FAQ";
+import Team from "./sections/Team/Team";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About/>
       <Sponsor/>
       <FAQ/>
+      <Team/>
       <Footer/>
     </div>
   );
