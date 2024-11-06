@@ -4,17 +4,19 @@ import './Nav.css'
  
 function Nav() {
 
-    var prevScrollpos = window.scrollY;
-    window.onscroll = function() {
-        const currentScrollPos = window.scrollY;
-        if (prevScrollpos >= currentScrollPos) {
-            // @ts-ignore
-            document.getElementById("nav").style.top = "0";
-        } else {
-            // @ts-ignore
-            document.getElementById("nav").style.top = "-5rem";
+    if (typeof window !== "undefined") {
+        var prevScrollpos = window.scrollY;
+        window.onscroll = function() {
+            const currentScrollPos = window.scrollY;
+            if (prevScrollpos >= currentScrollPos) {
+                // @ts-ignore
+                document.getElementById("nav").style.top = "0";
+            } else {
+                // @ts-ignore
+                document.getElementById("nav").style.top = "-5rem";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
     }
 
     return (
