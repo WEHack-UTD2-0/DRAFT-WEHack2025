@@ -1,10 +1,22 @@
 /* Jumbotron.css */
 
 .jumbotron {
-    background-image:url("/static/images/wehack-test background2.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
+    background-image: 
+        url("/static/images/IMG_0847 1.png"),
+        url("/static/images/IMG_0847 2.png"),
+        url("/static/images/wehack-test background2.png");
+    background-size: 
+        300px auto,
+        300px auto,
+        cover;
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        top left,
+        bottom 420px right 0,
+        center;
     padding: 2rem 1rem;
 }
 
@@ -13,7 +25,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 9rem;
 }
 
 .jumbo-buttons {
@@ -22,7 +34,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0rem 0rem 0rem;
+  margin: 4rem 0rem 0rem 0rem;
   gap: 1.3rem;
 }
 
@@ -38,13 +50,14 @@
 
 .countdown {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   position: relative;
   margin-top: 1rem;
   margin-bottom: 6rem;
+  
 }
 
 .circle-container {
@@ -74,39 +87,39 @@
 
 /* Circle Sizes & Text Sizes */
 .circle-container.large .circle {
-  width: 19rem;
-  height: 19rem;
+  width: 14rem;
+  height: 14rem;
 }
 
 .circle-container.medium .circle {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .circle-container.small .circle {
-  width: 11rem;
-  height: 11rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .circle-container.smallest .circle {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .circle-container.large p {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .circle-container.medium p {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .circle-container.small p {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .circle-container.smallest p {
-  font-size: 15px;
+  font-size: 24px;
 }
 
 /* Y-positioning using transform for vertical adjustment */
@@ -152,7 +165,7 @@
   .circle-container.medium p,
   .circle-container.small p,
   .circle-container.smallest p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .countdown {
@@ -179,8 +192,8 @@
   }
 
   .wehack-stats-mascot {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     margin: 0;
     padding: 0;
     object-fit: contain;
@@ -191,10 +204,25 @@
     scale: 0.8;  /* This will make the button 80% of its original size */
     margin: 0.5rem 0;
   }
+
+  .jumbotron {
+    background-size: 
+        200px auto,
+        200px auto,
+        cover;
+    background-position:
+        top left,
+        bottom 150px right 0,
+        center;
+  }
 }
 
 @media (min-width: 1024px) {
   .jumbotron {
     gap: 6rem;
   }
-} 
+}
+
+.circle p {
+  font-family: var(--font-junge);
+}
