@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import './Jumbotron.css';
-import Button from '../../components/Button/Button';
-
+import React, { useEffect, useState } from 'react'
+import './Jumbotron.css'
+import Button from '../../components/Button/Button'
 
 function Jumbotron() {
   const [days, setDays] = useState(0);
@@ -10,7 +9,7 @@ function Jumbotron() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const target = new Date("4/5/2025 9:00:00");
+  const target = new Date("4/5/2025 23:59:00");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,7 +42,7 @@ function Jumbotron() {
           <h4 className='jumbo-text text-[#FFE9D7] text-sm font-serif lg:text-lg'>WEHack Presents</h4>
           <h1 className='jumbo-title text-[#FFE9D7] text-9xl md:text-5xl lg:text-5xl animate-pulse'>WEHack 2025</h1>
           <h2 className='jumbo-text font-thin text-[#FFE9D7] text-l sm:text-9xl md:text-5xl lg:text-5xl'>COMING SOON</h2>
-          <h3 className='jumbo-text font-extralight text-[#FFE9D7] text-sm sm:text-2xl md:2xl lg:text-3xl'>April 2025</h3>
+          <h3 className='jumbo-text font-extralight text-[#FFE9D7] text-sm sm:text-1xl md:1xl lg:text-2xl'>April 2025</h3>
 
                 <div className='jumbo-buttons flex flex-col items-center'>
                   <Button link={'https://events.mlh.io/events/11456-wehack'} buttonText={'Interest Form'}/>
@@ -53,26 +52,26 @@ function Jumbotron() {
                 {/* Countdown Timer Here */}
 
           <div className="countdown">
-            <div className="circle-container large animate-pulse">
-              <div className="circle bg-[rgba(255,233,215,0.68)]">
+            <div className="circle-container large">
+              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse">
                 <p>{days}</p>
               </div>
               <p className="label">Days</p>
             </div>
-            <div className="circle-container medium animate-pulse">
-              <div className="circle bg-[rgba(255,233,215,0.68)]">
+            <div className="circle-container medium">
+              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:500ms]">
                 <p>{hours}</p>
               </div>
               <p className="label">Hours</p>
             </div>
-            <div className="circle-container small animate-pulse">
-              <div className="circle bg-[rgba(255,233,215,0.68)]">
+            <div className="circle-container small">
+              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:300ms]">
                 <p>{minutes}</p>
               </div>
               <p className="label">Minutes</p> 
             </div>
-            <div className="circle-container smallest animate-pulse">
-              <div className="circle bg-[rgba(255,233,215,0.68)]">
+            <div className="circle-container smallest">
+              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:1500ms]">
                 <p>{seconds}</p>
               </div>
               <p className="label">Seconds</p>
@@ -80,7 +79,7 @@ function Jumbotron() {
 
             <div>
               <img 
-                className="wehack-stats-mascot h-auto w-[5rem] sm:w-[8rem] md:w-[10rem] lg:w-[12rem] scale-x-[-1]"  
+                className="wehack-stats-mascot h-auto w-[7rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] scale-x-[-1]"  
                 src={"/static/images/IMG_0843(2).png"} 
                 alt="a bear trying to catch a butterfly" 
                 loading="eager"
