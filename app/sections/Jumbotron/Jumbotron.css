@@ -1,29 +1,29 @@
+/* Jumbotron.css */
+
 .jumbotron {
     background-image:url("/static/images/wehack-test background2.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
+    padding: 2rem 1rem;
 }
 
 .jumbo-group {
-    /* flex */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* margin: top, right, bottom left*/
-    /* margin: 2rem 0rem 0rem 0rem; */
-    /* gap:0.5rem; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
 }
 
 .jumbo-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin: top, right, bottom left*/
-    margin: 1rem 0rem 0rem 0rem;
-    gap:1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem 0rem 0rem;
+  gap: 1.3rem;
 }
 
 .jumbo-title{
@@ -36,82 +36,80 @@
     font-family: var(--font-julius-sans-one);
 }
 
-
 .countdown {
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    width: 100%;
-    position: relative; /* Enables absolute positioning of children */
-    margin-top: 1vh;
-    
-  }
-  
-  /* General Circle Styles */
-  .circle-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-  }
-  
-  .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: 0px 25px 101.5px #D2AF71;
-    color: #755642;
-    font-family: var(--font-junge)
-  }
-  
-  /* Label Styles */
-  .label {
-    color: #ffffff;
-    margin-top: 1rem;
-    font-size: 12px;
-    font-family: var(--font-junge)
-  }
-  
-  /* Circle Sizes & Text Sizes */
-  .circle-container.large .circle {
-    width: 20rem;
-    height: 20rem;
-  }
-  
-  .circle-container.medium .circle {
-    width: 15rem;
-    height: 15rem;
-  }
-  
-  .circle-container.small .circle {
-    width: 12rem;
-    height: 12rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
 
-  .circle-container.smallest .circle {
-    width: 7rem;
-    height: 7rem;
-  }
-  
-  .circle-container.large p {
-    font-size: 70px; /* Adjust size for large circles */
-  }
-  
-  .circle-container.medium p {
-    font-size: 60px; /* Adjust size for medium circles */
-  }
-  
-  .circle-container.small p {
-    font-size: 30px; /* Adjust size for small circles */
-  }
-  
-  .circle-container.smallest p {
-    font-size: 20px; /* Adjust size for small circles */
-  }
+.circle-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
 
-  /* Y-positioning using transform for vertical adjustment */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 25px 101.5px #D2AF71;
+  color: #755642;
+  font-family: var(--font-junge);
+}
+
+.label {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 12px;
+  font-family: var(--font-junge);
+}
+
+/* Circle Sizes & Text Sizes */
+.circle-container.large .circle {
+  width: 19rem;
+  height: 19rem;
+}
+
+.circle-container.medium .circle {
+  width: 12rem;
+  height: 12rem;
+}
+
+.circle-container.small .circle {
+  width: 11rem;
+  height: 11rem;
+}
+
+.circle-container.smallest .circle {
+  width: 6rem;
+  height: 6rem;
+}
+
+.circle-container.large p {
+  font-size: 40px;
+}
+
+.circle-container.medium p {
+  font-size: 30px;
+}
+
+.circle-container.small p {
+  font-size: 20px;
+}
+
+.circle-container.smallest p {
+  font-size: 15px;
+}
+
+/* Y-positioning using transform for vertical adjustment */
   .circle-container.large {
     transform: translateY(60px); /* Move slightly above center */
   }
@@ -129,57 +127,74 @@
     transform: translateY(30px); /* Slightly above center */
   }
 
-  .label {
-    color: bisque;
+/* Media Queries */
+@media (max-width: 780px) {
+  .jumbo-title {
+    font-size: 3rem;
+    line-height: 1.2;
   }
 
-/* === media queries === */
+  .jumbo-text {
+    font-size: 1rem;
+  }
 
-/* small */
-@media (min-width: 580px) {
-    .jumboImg-container {
-        margin-right:0rem;
-    }
-    
-    .jumboText-container {
-        margin-left:0rem;
-    }
+  /* Make all circles the same size on mobile */
+  .circle-container.large .circle,
+  .circle-container.medium .circle,
+  .circle-container.small .circle,
+  .circle-container.smallest .circle {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  /* Uniform text size for all circles on mobile */
+  .circle-container.large p,
+  .circle-container.medium p,
+  .circle-container.small p,
+  .circle-container.smallest p {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .circle-container {
+    margin: 0;
+  }
+
+  /* Reset all vertical positioning on mobile */
+  .circle-container.large,
+  .circle-container.medium,
+  .circle-container.small,
+  .circle-container.smallest {
+    transform: translateY(0);
+  }
+
+  .wehack-stats-mascot {
+    width: 7rem;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    max-width: none;
+  }
+
+  .jumbo-buttons {
+    scale: 0.8;  /* This will make the button 80% of its original size */
+    margin: 0.5rem 0;
+  }
 }
 
-/* medium */
-@media (min-width: 768px) {
-    .jumboImg-container {
-        margin-right:0rem;
-    }
-    .jumboText-container {
-        margin-left:0rem;
-    }
-    .jumbo-group {
-        /* margin: top, right, bottom left*/
-        margin: 0rem 3rem 0rem 0rem;
-    }
-}
-
-/* large */
 @media (min-width: 1024px) {
-    .jumboImg-container {
-        margin-right:-5rem;
-    }
-    .jumboText-container {
-        margin-left:-5rem;
-    }
-    .jumbo-buttons {
-        /* margin: top, right, bottom left*/
-        margin: 2rem 0rem 0rem 0rem;
-    }
-    .jumbo-group {
-        /* margin: top, right, bottom left*/
-        margin: 0rem 3rem 0rem 0rem;
-    }
-    .jumbotron {
-        gap:6rem;
-    }
-
-    
-}
-
+  .jumbotron {
+    gap: 6rem;
+  }
+} 
