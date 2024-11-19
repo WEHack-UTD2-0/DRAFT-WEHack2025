@@ -80,7 +80,7 @@ function Jumbotron() {
             <div>
               <img 
                 className="wehack-stats-mascot h-auto w-[7rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] scale-x-[-1]"  
-                src={"/static/images/IMG_0843(2).png"} 
+                src={"/static/images/raccoon sitting.png"} 
                 alt="a bear trying to catch a butterfly" 
                 loading="eager"
               />
