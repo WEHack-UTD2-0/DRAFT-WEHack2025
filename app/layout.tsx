@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
-import { Inknut_Antiqua, Nunito, Junge, Julius_Sans_One} from "next/font/google";
+import { Inknut_Antiqua, Nunito, Junge, Julius_Sans_One, Righteous, Darker_Grotesque} from "next/font/google";
 import "./globals.css";
 import Script from  "next/script"
 
@@ -12,6 +12,17 @@ const inknut = Inknut_Antiqua({
   weight:'400',
   subsets: ['devanagari'],
   variable: '--font-inknut-antiqua'
+});
+
+const righteous = Righteous({
+  subsets: ['latin'],
+  variable: '--font-righteous',
+  weight: '400'
+});
+
+const darker_grotesque = Darker_Grotesque({
+  subsets: ['latin'],
+  variable: '--font-darker-grotesque',
 });
 
 // Add Junge font
@@ -57,7 +68,7 @@ export default function RootLayout({
         </Script>
 
       </head>
-      <body className={`${nunito.variable} ${inknut.variable} ${junge.variable} ${julius_sans.variable}`}>{children}</body>
+      <body className={`${nunito.variable} ${inknut.variable} ${junge.variable} ${julius_sans.variable} ${righteous.variable} ${darker_grotesque.variable}`}>{children}</body>
     </html>
   );
 }

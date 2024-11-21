@@ -4,7 +4,8 @@
     background-image: 
         url("/static/images/IMG_0847 1.png"),
         url("/static/images/IMG_0847 2.png"),
-        url("/static/images/wehack-test background2.png");
+        /* url("/static/images/backgroundnew.PNG"); */
+        url("/static/images/cityscape (alt) with car with glow 1 (1).png");
     background-size: 
         300px auto,
         300px auto,
@@ -18,14 +19,28 @@
         bottom 420px right 0,
         center;
     padding: 2rem 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  OLD CODE*/ 
+    justify-content: flex-start;
 }
 
-.jumbo-group {
+/* .jumbo-group {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin-top: 9rem;
+} */
+
+.jumbo-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5rem;
+  margin-left: 4rem;
 }
 
 .jumbo-buttons {
@@ -45,19 +60,25 @@
 
 
 .jumbo-text {
-    font-family: var(--font-julius-sans-one);
+    font-family: var(--font-darker-grotesque);
+}
+
+.countdown-container {
+  background-color: #251E2B;
+  padding: 4rem 2rem;
+  width: 100%;
 }
 
 .countdown {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   position: relative;
   margin-top: 1rem;
   margin-bottom: 6rem;
-  
+  gap: 3rem;
 }
 
 .circle-container {
@@ -65,7 +86,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  margin: 0;
 }
 
 .circle {
@@ -124,20 +145,19 @@
 
 /* Y-positioning using transform for vertical adjustment */
   .circle-container.large {
-    transform: translateY(60px); /* Move slightly above center */
+    transform: translateY(40px);
   }
   
   .circle-container.medium {
-    transform: translateY(160px); /* Move below center */
-
+    transform: translateY(100px);
   }
   
   .circle-container.small {
-    transform: translateY(40px); /* Slightly above center */
+    transform: translateY(20px);
   }
 
   .circle-container.smallest {
-    transform: translateY(30px); /* Slightly above center */
+    transform: translateY(0px);
   }
 
 /* Media Queries */
@@ -168,15 +188,14 @@
     font-size: 1.2rem;
   }
 
+  .countdown-container {
+    padding: 2rem 1rem;
+  }
+
   .countdown {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
     margin-top: 5rem;
-    padding: 0;
-    gap: 1rem;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
   }
 
   .circle-container {
@@ -206,6 +225,7 @@
   }
 
   .jumbotron {
+    min-height: 100vh;
     background-size: 
         200px auto,
         200px auto,

@@ -36,22 +36,22 @@ function Jumbotron() {
 
 
   return (
-    <section className='jumbotron parent-container' id="home">
-      <div className='jumboText-container flex flex-col items-center justify-center text-center'>
+    <section className='jumbotron' id="home">
+      <div className='jumboText-container flex flex-col items-start text-left'>
         <div className='jumbo-group'>
-          <h4 className='jumbo-text text-[#FFE9D7] text-sm font-serif lg:text-lg'>WEHack Presents</h4>
-          <h1 className='jumbo-title text-[#FFE9D7] text-9xl md:text-5xl lg:text-5xl animate-pulse'>WEHack 2025</h1>
-          <h2 className='jumbo-text font-thin text-[#FFE9D7] text-l sm:text-9xl md:text-5xl lg:text-5xl'>COMING SOON</h2>
-          <h3 className='jumbo-text font-extralight text-[#FFE9D7] text-sm sm:text-1xl md:1xl lg:text-2xl'>April 2025</h3>
+          <h4 className='jumbo-text text-[#B4A498] text-sm font-serif lg:text-2xl'>WEHack 2025 Presents</h4>
+          <h1 className='jumbo-title text-[#FFE9D7] text-9xl md:text-5xl lg:text-9xl animate-pulse'>Timeless Moments Await</h1>
+          {/* <h2 className='jumbo-text font-thin text-[#FFE9D7] text-l sm:text-9xl md:text-5xl lg:text-5xl'>COMING SOON</h2> */}
+          <h2 className='jumbo-text font-black text-[#A6CDC4] text-sm sm:text-1xl md:1xl lg:text-4xl'>April 5th-6th</h2>
 
-                <div className='jumbo-buttons flex flex-col items-center'>
-                  <Button link={'https://events.mlh.io/events/11456-wehack'} buttonText={'Interest Form'}/>
+                <div className='jumbo-buttons flex flex-row items-start space-x-4 mt-4 gap-1.3'>
+                  {/* <Button link={'https://events.mlh.io/events/11456-wehack'} buttonText={'Interest Form'}/> */}
                   {/* <Button link={'https://live.wehackutd.com/'} buttonText={'WEHack Portal'}/> */}
                 </div>
 
                 {/* Countdown Timer Here */}
 
-          <div className="countdown">
+          {/* <div className="countdown">
             <div className="circle-container large">
               <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse">
                 <p>{days}</p>
@@ -85,7 +85,7 @@ function Jumbotron() {
                 loading="eager"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
