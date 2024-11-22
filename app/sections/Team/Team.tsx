@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useTransition } from 'react';
 import './Team.css';
 
-
 function Team() {
  const teamMembers = [
    { name: 'Maheen Ferdouse', role: 'Co-Director', image: '/static/images/maheen.jpg' },
@@ -11,7 +10,6 @@ function Team() {
    { name: 'Clowie Garcia', role: 'Advisor', image: '/static/images/clowie.jpg' },
    { name: 'Shivani Zala', role: 'Experience Director', image: '/static/images/shivani.jpg' },
    { name: 'Gayathri Jayaraman', role: 'Experience Coordinator', image: '/static/images/gayathri.jpg' },
-   // Choose photo for Timage because she doesn't have photo picked in drive
    { name: 'Timage Abubaker', role: 'Experience Coordinator', image: '/static/images/timage.jpg' },
    { name: 'Toby Estipona', role: 'Experience Coordinator', image: '/static/images/toby.jpg' },
    { name: 'Shreya Ram', role: 'Industry Director', image: '/static/images/shreya.jpg' },
@@ -39,75 +37,81 @@ function Team() {
  ];
 
  const [startIndex, setStartIndex] = useState(0);
- const [visibleCount, setVisibleCount] = useState(10);
+ const [visibleCount, setVisibleCount] = useState(6); 
  const [isPending, startTransition] = useTransition();
 
  useEffect(() => {
-   const handleResize = () => {
-     if (window.innerWidth > 1200) {
-       setVisibleCount(10);
-     } else if (window.innerWidth > 900) {
-       setVisibleCount(8);
-     } else if (window.innerWidth > 600) {
-       setVisibleCount(6);
-     } else {
-       setVisibleCount(4);
-     }
-   };
+  const handleResize = () => {
+    if (window.innerWidth > 1200) {
+      setVisibleCount(8); 
+    } else if (window.innerWidth > 600) {
+      setVisibleCount(6); 
+    } else {
+      setVisibleCount(6);
+    }
+  };
 
-   handleResize();
-   window.addEventListener('resize', handleResize);
-   return () => window.removeEventListener('resize', handleResize);
+  handleResize(); 
+  window.addEventListener('resize', handleResize);
+  
+  return () => window.removeEventListener('resize', handleResize);
  }, []);
 
  const handleNext = () => {
-   startTransition(() => {
-     setStartIndex((prevIndex) => 
-       (prevIndex + 1) % teamMembers.length
-     );
-   });
+    startTransition(() => {
+        setStartIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+    });
  };
 
  const handlePrev = () => {
-   startTransition(() => {
-     setStartIndex((prevIndex) => 
-       (prevIndex - 1 + teamMembers.length) % teamMembers.length
-     );
-   });
+    startTransition(() => {
+        setStartIndex((prevIndex) => (prevIndex - 1 + teamMembers.length) % teamMembers.length);
+    });
  };
 
- const visibleMembers = Array(visibleCount).fill(null).map((_, index) => {
-   const memberIndex = (startIndex + index) % teamMembers.length;
-   return teamMembers[memberIndex];
+ // Create an array of visible members based on startIndex
+ const visibleMembers = Array.from({ length: visibleCount }, (_, index) => {
+    const memberIndex = (startIndex + index) % teamMembers.length;
+    return teamMembers[memberIndex];
  });
 
  return (
-   <div className='FAQ-container bg-[#755642] w-full h-auto flex flex-wrap flex-col items-center justify-center p-6 pb-40 lg:pb-60' id="Team">
-     <h1 className='team-title text-[#FFE9D7] text-center text-4xl md:text-5xl lg:text-5xl pb-7 md:pb-15 md:pb-20'>Meet the Team</h1>
-     
-     <div className="polaroid-container">
-       {visibleMembers.map((member, index) => (
-         <div 
-           key={index} 
-           className={`polaroid ${
-             index === 0 || index === visibleCount - 1 ? 
-               (isPending ? 'fade-out' : 'fade-in') : ''
-           }`}
-         >
-           <img src={member.image} alt={member.name} className="polaroid-image" />
-           <div className="polaroid-text">
-             <h3 className="position-text font-bold">{member.name}</h3>
-             <p className="role-text">{member.role}</p>
-           </div>
-         </div>
-       ))}
-     </div>
-     <div className="flex justify-between mt-4 w-full max-w-6xl">
-       <button onClick={handlePrev} className="nav-button bg-[#FFE9D7] text-[#755642] px-4 py-2 rounded">{'<'}</button>
-       <button onClick={handleNext} className="nav-button bg-[#FFE9D7] text-[#755642] px-4 py-2 rounded">{'>'}</button>
-     </div>
-   </div>
+  <div className='FAQ-container bg-[#251E2B] w-full h-auto flex flex-wrap flex-col items-center justify-center p-6 pb-40 lg:p-60' id="Team">
+    <img 
+      src={'/static/images/team-title.png'}
+      alt="Meet the Team" 
+      className='team-title text-[#FFE9D7] text-center pb-7 md:p-15 md:p-20'
+    />
+    <div className="polaroid-container">
+      {visibleMembers.map((member, index) => (
+        <div 
+          key={index} 
+          className={`polaroid ${isPending && index === 0 ? 'fade-out' : ''}`} // Apply fade-out only to the first item
+        >
+          <img src={member.image} alt={member.name} className="polaroid-image" loading="lazy" />
+          <div className="polaroid-text">
+            <h3 className="position-text font-bold">{member.name}</h3>
+            <p className="role-text">{member.role}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className="flex justify-between mt-4 w-full max-w-6xl">
+      <img 
+        src="/static/images/arrow-left.png" 
+        alt="Previous" 
+        onClick={handlePrev} 
+        className="nav-button cursor-pointer" 
+      />
+      <img 
+        src="/static/images/arrow-right.png" 
+        alt="Next" 
+        onClick={handleNext} 
+        className="nav-button cursor-pointer" 
+      />
+    </div>
+  </div>
  );
 }
 
-export default Team
+export default Team;
