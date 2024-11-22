@@ -2,21 +2,21 @@
 
 .jumbotron {
     background-image: 
-        url("/static/images/IMG_0847 1.png"),
-        url("/static/images/IMG_0847 2.png"),
+        /* url("/static/images/IMG_0847 1.png"),
+        url("/static/images/IMG_0847 2.png"), */
         /* url("/static/images/backgroundnew.PNG"); */
         url("/static/images/cityscape (alt) with car with glow 1 (1).png");
     background-size: 
-        300px auto,
-        300px auto,
+        /* 300px auto,
+        300px auto, */
         cover;
     background-repeat: 
-        no-repeat,
-        no-repeat,
+        /* no-repeat,
+        no-repeat, */
         no-repeat;
     background-position:
-        top left,
-        bottom 420px right 0,
+        /* top left,
+        bottom 420px right 0, */
         center;
     padding: 2rem 1rem;
     min-height: 100vh;
@@ -227,12 +227,12 @@
   .jumbotron {
     min-height: 100vh;
     background-size: 
-        200px auto,
-        200px auto,
+        /* 200px auto,
+        200px auto, */
         cover;
     background-position:
-        top left,
-        bottom 150px right 0,
+        /* top left,
+        bottom 150px right 0, */
         center;
   }
 }
