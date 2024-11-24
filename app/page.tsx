@@ -5,6 +5,7 @@ import Nav from "./sections/Navbar/Nav";
 import Footer from "./sections/Footer/Footer";
 import FAQ from "./sections/FAQ/FAQ";
 import Testimonials from "@/app/sections/Testimonials/Testimonials";
+import Countdown from "./sections/Countdown/Countdown";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="App">
       <Nav/>
       <Jumbotron/>
+      <Countdown/>
       <About/>
       <Testimonials/>
       <Sponsor/>
