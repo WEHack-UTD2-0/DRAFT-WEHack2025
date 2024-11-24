@@ -4,6 +4,7 @@ import Sponsor from "./sections/Sponsor/Sponsor";
 import Nav from "./sections/Navbar/Nav";
 import Footer from "./sections/Footer/Footer";
 import FAQ from "./sections/FAQ/FAQ";
+import Timer from "./sections/Timer/Timer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="App">
       <Nav/>
       <Jumbotron/>
+      <Timer/>
       <About/>
       <Sponsor/>
       <FAQ/>

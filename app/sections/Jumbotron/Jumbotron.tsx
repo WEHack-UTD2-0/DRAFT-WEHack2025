@@ -36,7 +36,7 @@ function Jumbotron() {
 
 
   return (
-    <section className='jumbotron parent-container' id="home">
+    <section className='jumbotron parent-container md:h-[70rem]' id="home">
       <div className='jumboText-container flex flex-col items-center justify-center text-center'>
         <div className='jumbo-group'>
           <h4 className='jumbo-text text-[#FFE9D7] text-sm font-serif lg:text-lg'>WEHack Presents</h4>
@@ -50,7 +50,7 @@ function Jumbotron() {
                 </div>
 
                 {/* Countdown Timer Here */}
-
+{/* 
           <div className="countdown">
             <div className="circle-container large">
               <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse">
@@ -85,7 +85,7 @@ function Jumbotron() {
                 loading="eager"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
