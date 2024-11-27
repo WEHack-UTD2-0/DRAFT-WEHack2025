@@ -4,6 +4,7 @@ import Sponsor from "./sections/Sponsor/Sponsor";
 import Nav from "./sections/Navbar/Nav";
 import Footer from "./sections/Footer/Footer";
 import FAQ from "./sections/FAQ/FAQ";
+import Team from "./sections/Team/Team";
 import Testimonials from "@/app/sections/Testimonials/Testimonials";
 import Countdown from "./sections/Countdown/Countdown";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials/>
       <Sponsor/>
       <FAQ/>
+      <Team/>
       <Footer/>
     </div>
   );
