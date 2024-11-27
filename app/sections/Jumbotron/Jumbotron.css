@@ -160,6 +160,7 @@
     transform: translateY(0px);
   }
 
+
 /* Media Queries */
 @media (max-width: 780px) {
   .jumbo-title {
@@ -217,7 +218,10 @@
     padding: 0;
     object-fit: contain;
     max-width: none;
+    transform: translateY(0rem) scaleX(-1);
   }
+
+  
 
   .jumbo-buttons {
     scale: 0.8;  /* This will make the button 80% of its original size */

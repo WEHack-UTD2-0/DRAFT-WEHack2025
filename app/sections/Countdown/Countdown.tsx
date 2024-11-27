@@ -65,9 +65,9 @@ function Countdown() {
 
             <div>
               <img 
-                className="wehack-stats-mascot h-auto w-[7rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] scale-x-[-1]"  
-                src={"/static/images/raccoon sitting.png"} 
-                alt="a bear trying to catch a butterfly" 
+                className="wehack-stats-mascot h-auto w-[9rem] translate-y-20 sm:w-[10rem] md:w-[12rem] lg:w-[14rem] scale-x-[-1]"  
+                src={"/static/images/Raccoon_Popcorn.png"} 
+                alt="a raccoon trying eating popcorn" 
                 loading="eager"
               />
             </div>
