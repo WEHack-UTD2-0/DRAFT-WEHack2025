@@ -19,7 +19,6 @@
         bottom 420px right 0, */
         center;
     padding: 2rem 1rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center;  OLD CODE*/ 
