@@ -8,6 +8,7 @@ import Testimonials from "@/app/sections/Testimonials/Testimonials";
 import Countdown from "./sections/Countdown/Countdown";
 import FilmStrip from "./components/FilmStrip/FilmStrip";
 import Stats from "./components/Stats/Stats";
+import Team from "./sections/Team/Team";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimonials/>
       <Sponsor/>
       <FAQ/>
+      <Team/>
       <Footer/>
     </div>
   );
