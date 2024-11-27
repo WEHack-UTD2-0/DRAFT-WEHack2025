@@ -64,14 +64,13 @@ function Countdown() {
                 <p className="label">Seconds</p>
               </div>
 
-              <div>
-                <img 
-                  className="h-auto w-[13rem] md:w-[14rem] md:translate-y-20 md:pt-16 lg:pt-0 lg:w-[15rem] scale-x-[-1]"  
-                  src={"/static/images/Raccoon_Popcorn.svg"} 
-                  alt="a raccoon sitting" 
-                  loading="eager"
-                />
-              </div>
+            <div>
+              <img 
+                className="wehack-stats-mascot h-auto w-[9rem] translate-y-20 sm:w-[10rem] md:w-[12rem] lg:w-[14rem] scale-x-[-1]"  
+                src={"/static/images/Raccoon_Popcorn.png"} 
+                alt="a raccoon trying eating popcorn" 
+                loading="eager"
+              />
             </div>
           </div>
     </section>
