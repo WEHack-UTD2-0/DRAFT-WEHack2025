@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.2.15",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-responsive-carousel": "^3.2.23"
+    "css-loader": "^7.1.2",
+    "next": "14.2.3",
+    "pure-react-carousel": "^1.32.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-responsive-carousel": "^3.2.23",
+    "style-loader": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
