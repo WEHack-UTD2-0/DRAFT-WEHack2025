@@ -62,8 +62,8 @@ export class Carousel extends React.Component {
                         </div>
                     </div>
 
-                    <div className="flex-col">
-                        <Slider className="text-container justify-items-center flex-row mb-8">
+                    <div className="flex flex-col justify-center items-center">
+                        <Slider className="text-container justify-items-center flex-row mb-8 pb-96">
                             <Slide index={0} className='text-[#CCBA97] font-medium text-lg lg:text-xl'>
                                 <p className=" text-justify text-md">"WEHack was the perfect opportunity for me because
                                     I felt like I was completely in a safe space where all my ideas were accepted. It
@@ -94,9 +94,9 @@ export class Carousel extends React.Component {
                             </Slide>
 
                         </Slider>
-                        <div className="flex-row justify-self-end">
-                            <img className="sticker w-64 h-auto mx-1 mt-18"
-                                 src={"/static/images/i-love-wehack-sticker.png"} alt={"WEHack Sticker"}/>
+                        <div className="flex flex-row justify-center md:justify-self-start">
+                            <img className="sticker h-auto lg:max-w-72 mx-1 mt-18 lg:mt-0 lg:-mr-96"
+                                 src={"/static/images/Group 27.svg"} alt={"WEHack Sticker"}/>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,12 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+.App {
+    background-image: url("/static/images/landing-page-background.webp");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .parent-container {    
     /* width and height */
@@ -56,14 +62,14 @@ h1, h3 {
     
 }
 
-h2 {
+h2, p {
     /* font-family: var(--font-julius-sans-one); */
     font-family: var(--font-darker-grotesque);
 }
 
-p {
+/* p {
     font-family:var(--font-nunito);
-}
+} */
 
 /* === media queries === */
 

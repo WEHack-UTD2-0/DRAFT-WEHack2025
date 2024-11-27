@@ -46,17 +46,20 @@ div.carousel{
         width: 20rem;
     }
     .text-container {
-        height: 28rem;
+        height: 30rem;
         width: 20rem;
         margin-bottom: 4px;
     }
     .button-grp {
         width: 20rem;
     }
-    .sticker{
-        width: 12rem;
-    }
 
+}
+
+@media (min-width:1060px) and (max-width: 1175px) {
+    .sticker {
+        margin-left: -20rem;
+    }
 }
 
 

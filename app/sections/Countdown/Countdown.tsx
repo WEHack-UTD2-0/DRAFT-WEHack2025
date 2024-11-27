@@ -36,40 +36,42 @@ function Countdown() {
 
 
   return (
-    <section className='countdown-container'>
-      <div className="countdown">
-        <div className="circle-container large">
-              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse">
-                <p>{days}</p>
+    <section className='timer-container flex justify-center'>
+      <div className="timer-group pt-10 -mt-20 pb-24 md:-mt-20 md:pb-32">
+        <div className="countdown">
+          <div className="circle-container large">
+                <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse">
+                  <p>{days}</p>
+                </div>
+                <p className="label">Days</p>
               </div>
-              <p className="label">Days</p>
-            </div>
-            <div className="circle-container medium">
-              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:500ms]">
-                <p>{hours}</p>
+              <div className="circle-container medium">
+                <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:500ms]">
+                  <p>{hours}</p>
+                </div>
+                <p className="label">Hours</p>
               </div>
-              <p className="label">Hours</p>
-            </div>
-            <div className="circle-container small">
-              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:300ms]">
-                <p>{minutes}</p>
+              <div className="circle-container small">
+                <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:300ms]">
+                  <p>{minutes}</p>
+                </div>
+                <p className="label">Minutes</p>
               </div>
-              <p className="label">Minutes</p> 
-            </div>
-            <div className="circle-container smallest">
-              <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:1500ms]">
-                <p>{seconds}</p>
+              <div className="circle-container smallest">
+                <div className="circle bg-[rgba(255,233,215,0.68)] animate-pulse [animation-delay:1500ms]">
+                  <p>{seconds}</p>
+                </div>
+                <p className="label">Seconds</p>
               </div>
-              <p className="label">Seconds</p>
-            </div>
 
-            <div>
-              <img 
-                className="wehack-stats-mascot h-auto w-[7rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] scale-x-[-1]"  
-                src={"/static/images/raccoon sitting.png"} 
-                alt="a bear trying to catch a butterfly" 
-                loading="eager"
-              />
+              <div>
+                <img 
+                  className="h-auto w-[13rem] md:w-[14rem] md:pt-16 lg:pt-0 lg:w-[15rem] scale-x-[-1]"  
+                  src={"/static/images/raccoon-sitting.webp"} 
+                  alt="a raccoon sitting" 
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
     </section>

@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
-import { Inknut_Antiqua, Nunito, Junge, Julius_Sans_One, Righteous, Darker_Grotesque} from "next/font/google";
+import { Inknut_Antiqua, Nunito, Junge, Julius_Sans_One, Righteous, Darker_Grotesque, Sriracha} from "next/font/google";
 import "./globals.css";
 import Script from  "next/script"
-
-const nunito = Nunito({ 
-  variable: '--font-nunito',
-  subsets: ["latin"]
-});
-const inknut = Inknut_Antiqua({
-  weight:'400',
-  subsets: ['devanagari'],
-  variable: '--font-inknut-antiqua'
-});
 
 const righteous = Righteous({
   subsets: ['latin'],
@@ -23,20 +13,6 @@ const righteous = Righteous({
 const darker_grotesque = Darker_Grotesque({
   subsets: ['latin'],
   variable: '--font-darker-grotesque',
-});
-
-// Add Junge font
-const junge = Junge({
-  subsets: ["latin"],
-  variable: "--font-junge",
-  weight: "400"
-});
-
-// Add Julius Sans One font
-const julius_sans = Julius_Sans_One({
-  subsets: ["latin"],
-  variable: "--font-julius-sans-one",
-  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -68,7 +44,7 @@ export default function RootLayout({
         </Script>
 
       </head>
-      <body className={`${nunito.variable} ${inknut.variable} ${junge.variable} ${julius_sans.variable} ${righteous.variable} ${darker_grotesque.variable}`}>{children}</body>
+      <body className={`${righteous.variable} ${darker_grotesque.variable}`}>{children}</body>
     </html>
   );
 }
