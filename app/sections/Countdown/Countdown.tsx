@@ -66,8 +66,8 @@ function Countdown() {
 
               <div>
                 <img 
-                  className="h-auto w-[13rem] md:w-[14rem] md:pt-16 lg:pt-0 lg:w-[15rem] scale-x-[-1]"  
-                  src={"/static/images/raccoon-sitting.webp"} 
+                  className="h-auto w-[13rem] md:w-[14rem] md:translate-y-20 md:pt-16 lg:pt-0 lg:w-[15rem] scale-x-[-1]"  
+                  src={"/static/images/Raccoon_Popcorn.svg"} 
                   alt="a raccoon sitting" 
                   loading="eager"
                 />
