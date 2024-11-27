@@ -17,6 +17,7 @@ export class Carousel extends React.Component {
                 isPlaying={true}
                 interval={6000}
                 infinite={true}
+                className="overflow-x-hidden"
 
             >
                 <div className="flex flex-row justify-items-center justify-center flex-wrap">

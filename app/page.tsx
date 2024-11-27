@@ -6,6 +6,8 @@ import Footer from "./sections/Footer/Footer";
 import FAQ from "./sections/FAQ/FAQ";
 import Testimonials from "@/app/sections/Testimonials/Testimonials";
 import Countdown from "./sections/Countdown/Countdown";
+import FilmStrip from "./components/FilmStrip/FilmStrip";
+import Stats from "./components/Stats/Stats";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Jumbotron/>
       <Countdown/>
       <About/>
+      <FilmStrip/>
+      <Stats/>
       <Testimonials/>
       <Sponsor/>
       <FAQ/>

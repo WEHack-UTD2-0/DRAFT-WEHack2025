@@ -40,7 +40,7 @@ function Testimonials() {
                 <img className='musicnote h-auto max-w-64 md:max-w-auto' src={"/static/images/Untitled design-8.png"} alt={"music note"}/>
                 
             </div> */}
-            <div className="flex flex-row justify-center justify-items-center">
+            <div className="flex flex-row justify-center justify-items-center overflow-x-hidden">
                 <Carousel/>
             </div>
         </div>

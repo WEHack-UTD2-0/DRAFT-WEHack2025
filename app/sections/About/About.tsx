@@ -16,13 +16,13 @@ function About() {
         </div>
       </div>
 
-      <div className="film-strip-container">
+      {/* <div className="film-strip-container">
         <img src="/static/images/Film Strip.svg" className="film-strip" />
-      </div>
+      </div> */}
     
 
       {/* stats */}
-      <Stats/>
+      {/* <Stats/> */}
     </section>
   )
 }
