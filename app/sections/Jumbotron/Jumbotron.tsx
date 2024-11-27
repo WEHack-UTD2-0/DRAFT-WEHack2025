@@ -3,7 +3,39 @@ import React, { useEffect, useState } from 'react'
 import './Jumbotron.css'
 import Button from '../../components/Button/Button'
 
-function Jumbotron() {return (
+function Jumbotron() {
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+
+  const target = new Date("4/5/2025 23:59:00");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
+
+      if (difference > 0) {
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setDays(d);
+        setHours(h);
+        setMinutes(m);
+        setSeconds(s);
+      } else {
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval); // Clear the interval on unmount
+  }, [target]);
+
+
+  return (
     <section className='jumbotron' id="home">
       <div className='jumboText-container flex flex-col items-start text-left'>
         <div className='jumbo-group'>
