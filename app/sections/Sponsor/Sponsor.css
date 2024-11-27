@@ -1,5 +1,4 @@
 .Sponsor-container {
-    background-color: #755642;
     width: 100%;
     height: auto;
     display: flex;
@@ -7,9 +6,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 1.5rem;
     padding-bottom: 10rem;
   }
+  
+  .sponsor-text {
+    font-family: var(--font-darker-grotesque);
+    font-size: x-large;
+    text-align: center;
+    margin: 0;
+  }
+
+  .sponsor-text-container {
+    text-align: justify;
+    padding: 0 1rem;
+}
   
   .Sponsor-title {
     text-shadow: 0rem 0rem 3rem white;
@@ -72,3 +84,42 @@
     opacity: 1;
   }
   
+@media screen and (max-width: 1280px) {
+    .sponsor-title {
+      height:8rem
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .sponsor-title {
+      height:6rem
+    }
+
+    .Sponsor-container {
+      padding: 1rem;
+      padding-bottom: 6rem;
+  }
+
+  .sponsor-text {
+      font-size: large;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .sponsor-title {
+      height:6rem
+    }
+
+    .Sponsor-container {
+      padding: 4rem;
+  }
+
+  .sponsor-text {
+      font-size: large;
+  }
+}
+
+.sponsor-title {
+    filter: drop-shadow(0rem 0rem 4rem #992444);
+}
