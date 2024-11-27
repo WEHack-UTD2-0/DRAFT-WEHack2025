@@ -23,7 +23,7 @@
 
 .Sponsor-logo {
   background-color: #FFE9D7;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 2rem;
   margin: 1rem;
   display: flex;
@@ -31,6 +31,7 @@
   justify-content: center;
   transition: box-shadow 0.3s ease;
   position: relative;
+  border:3px solid #A6CDC4;
 }
 
 .Sponsor-logo:hover {
@@ -73,6 +74,11 @@
   -webkit-animation:spinCC 4s linear infinite;
   -moz-animation:spinCC 4s linear infinite;
   animation:spinCC 4s linear infinite;
+}
+
+.glow-sponsor {
+  filter: drop-shadow(0 0 20px #992444);
+  transform: rotate(5deg);
 }
 
 @-moz-keyframes spinCC { 
