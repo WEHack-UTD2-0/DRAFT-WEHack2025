@@ -3,7 +3,7 @@ import './FilmStrip.css'
 function FilmStrip() {
   return (
       <div className="film-strip-container">
-        <img src="/static/images/Film Strip.webp" className="lg:-mb-96"/>
+        <img src="/static/images/Film Strip.webp" className="lg:-mb-96 -my-40 lg:-my-0"/>
       </div>
   )
 }
