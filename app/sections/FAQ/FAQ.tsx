@@ -4,7 +4,7 @@ import Question from '@/app/components/Question/Question'
 
 function FAQ() {
   return (
-    <div className='FAQ-container w-full h-auto flex flex-wrap flex-col items-center justify-center p-6 pb-40 lg:pb-60 pt-20' id="FAQ">
+    <div className='FAQ-container w-full h-auto flex flex-wrap flex-col items-center justify-center p-6 pb-40 lg:pb-24 pt-20' id="FAQ">
         <div className="title-container flex flex-col">      
             <div className="header-container pb-12 md:pb-24 lg:pb-36 flex flex-col md:flex-row gap-x-10">
                 <div className="flex justify-start pb-5 -ml-8">

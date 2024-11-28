@@ -5,35 +5,35 @@ import './Team.css';
 
 function Team() {
  const teamMembers = [
-   { name: 'Maheen Ferdouse', role: 'Co-Director', image: '/static/images/maheen.jpg' },
-   { name: 'Mansi Patel', role: 'Co-Director', image: '/static/images/mansi.jpg' },   
-   { name: 'Clowie Garcia', role: 'Advisor', image: '/static/images/clowie.jpg' },
-   { name: 'Shivani Zala', role: 'Experience Director', image: '/static/images/shivani.jpg' },
-   { name: 'Gayathri Jayaraman', role: 'Experience Coordinator', image: '/static/images/gayathri.jpg' },
-   { name: 'Timage Abubaker', role: 'Experience Coordinator', image: '/static/images/timage.jpg' },
-   { name: 'Toby Estipona', role: 'Experience Coordinator', image: '/static/images/toby.jpg' },
-   { name: 'Shreya Ram', role: 'Industry Director', image: '/static/images/shreya.jpg' },
-   { name: 'Sanjana Kotha', role: 'Industry Coordinator', image: '/static/images/sanjana.jpg' },
-   { name: 'Mariyam Zaki', role: 'Industry Coordinator', image: '/static/images/mariyam.jpg' },
-   { name: 'Dharshini Mahesh', role: 'Industry Coordinator', image: '/static/images/dharshini.jpg' },
-   { name: 'Elisa Paul', role: 'Industry Coordinator', image: '/static/images/elisa.jpg' },
-   { name: 'Hemal Pathak', role: 'Logistics Director', image: '/static/images/hemal.jpg' },
-   { name: 'Nivedha Sreenivasan', role: 'Logistics Coordinator', image: '/static/images/nivedha.jpg' },
-   { name: 'Oviya Selvakumar', role: 'Logistics Coordinator', image: '/static/images/oviya.jpg' },
-   { name: 'Shriya Rajesh', role: 'Logistics Coordinator', image: '/static/images/shriya.jpg' },
-   { name: 'Sri Vellanki', role: 'Logistics Coordinator', image: '/static/images/sri.jpg' },
-   { name: 'Rita Kaushik', role: 'Marketing Directior', image: '/static/images/rita.jpg' },
-   { name: 'Faith Omoye', role: 'Marketing Coordinator', image: '/static/images/faith.jpg' },
-   { name: 'Kanchan Javalkar', role: 'Marketing Coordinator', image: '/static/images/kanchan.jpg' },
-   { name: 'Meghan Grayson', role: 'Marketing Coordinator', image: '/static/images/meghan.jpg' },
-   { name: 'Nazihah Hossain', role: 'Marketing Coordinator', image: '/static/images/nazihah.jpg' },
+   { name: 'Maheen Ferdouse', role: 'Co-Director', image: '/static/images/team/maheen.jpg' },
+   { name: 'Mansi Patel', role: 'Co-Director', image: '/static/images/team/mansi.jpg' },   
+   { name: 'Clowie Garcia', role: 'Advisor', image: '/static/images/team/clowie.jpg' },
+   { name: 'Shivani Zala', role: 'Experience Director', image: '/static/images/team/shivani.jpg' },
+   { name: 'Gayathri Jayaraman', role: 'Experience Coordinator', image: '/static/images/team/gayathri.jpg' },
+//    { name: 'Timage Abubaker', role: 'Experience Coordinator', image: '/static/images/team/timage.jpg' },
+   { name: 'Toby Estipona', role: 'Experience Coordinator', image: '/static/images/team/toby.jpg' },
+   { name: 'Shreya Ram', role: 'Industry Director', image: '/static/images/team/shreya.jpg' },
+   { name: 'Sanjana Kotha', role: 'Industry Coordinator', image: '/static/images/team/sanjana.jpg' },
+   { name: 'Mariyam Zaki', role: 'Industry Coordinator', image: '/static/images/team/mariyam.jpg' },
+   { name: 'Dharshini Mahesh', role: 'Industry Coordinator', image: '/static/images/team/dharshini.jpg' },
+   { name: 'Elisa Paul', role: 'Industry Coordinator', image: '/static/images/team/elisa.jpg' },
+   { name: 'Hemal Pathak', role: 'Logistics Director', image: '/static/images/team/hemal.jpg' },
+   { name: 'Nivedha Sreenivasan', role: 'Logistics Coordinator', image: '/static/images/team/nivedha.jpg' },
+   { name: 'Oviya Selvakumar', role: 'Logistics Coordinator', image: '/static/images/team/oviya.jpg' },
+   { name: 'Shriya Rajesh', role: 'Logistics Coordinator', image: '/static/images/team/shriya.jpg' },
+   { name: 'Sri Vellanki', role: 'Logistics Coordinator', image: '/static/images/team/sri.jpg' },
+   { name: 'Rita Kaushik', role: 'Marketing Directior', image: '/static/images/team/rita.jpg' },
+   { name: 'Faith Omoye', role: 'Marketing Coordinator', image: '/static/images/team/faith.jpg' },
+   { name: 'Kanchan Javalkar', role: 'Marketing Coordinator', image: '/static/images/team/kanchan.jpg' },
+   { name: 'Meghan Grayson', role: 'Marketing Coordinator', image: '/static/images/team/meghan.jpg' },
+   { name: 'Nazihah Hossain', role: 'Marketing Coordinator', image: '/static/images/team/nazihah.jpg' },
    // Zara doesn't have a new photo yet
    // { name: 'Zara Iqbal', role: 'Marketing Coordinator', image: '/static/images/zara.jpg' },
-   { name: 'Sneha Bista', role: 'Development Director', image: '/static/images/sneha.jpg' },
-   { name: 'Annie Li', role: 'Development Coordinator', image: '/static/images/annie.jpg' },
-   { name: 'Clara Conner', role: 'Development Coordinator', image: '/static/images/clara.jpg' },
-   { name: 'Safia Sharif', role: 'Development Coordinator', image: '/static/images/safia.jpg' },
-   { name: 'Zubiya Syeda', role: 'Development Coordinator', image: '/static/images/zubiya.jpg' },
+   { name: 'Sneha Bista', role: 'Development Director', image: '/static/images/team/sneha.jpg' },
+   { name: 'Annie Li', role: 'Development Coordinator', image: '/static/images/team/annie.jpg' },
+   { name: 'Clara Conner', role: 'Development Coordinator', image: '/static/images/team/clara.jpg' },
+   { name: 'Safia Sharif', role: 'Development Coordinator', image: '/static/images/team/safia.jpg' },
+   { name: 'Zubiya Syeda', role: 'Development Coordinator', image: '/static/images/team/zubiya.jpg' },
  ];
 
  const [startIndex, setStartIndex] = useState(0);
@@ -42,8 +42,8 @@ function Team() {
 
  useEffect(() => {
   const handleResize = () => {
-    if (window.innerWidth > 1200) {
-      setVisibleCount(8); 
+    if (window.innerWidth > 1300) {
+        setVisibleCount(8); 
     } else if (window.innerWidth > 600) {
       setVisibleCount(6); 
     } else {
@@ -76,19 +76,19 @@ function Team() {
  });
 
  return (
-  <div className='FAQ-container bg-[#251E2B] w-full h-auto flex flex-wrap flex-col items-center justify-center p-6 pb-40 lg:p-60' id="Team">
-    <img 
-      src={'/static/images/team-title.png'}
-      alt="Meet the Team" 
-      className='team-title text-[#FFE9D7] text-center pb-7 md:p-15 md:p-20'
-    />
+  <div className='w-full h-auto flex flex-wrap flex-col items-center justify-center py-40 lg:px-32' id="Team">
+    <div className="title-container flex flex-col md:flex-row justify-center items-center gap-y-2 md:gap-x-16 lg:gap-x-24 pb-24 md:pb-24 lg:pb-36">      
+        <div className="glow-team">
+            <h1 className='FAQ-title text-[#992444] text-center text-4xl md:text-5xl lg:text-5xl'>Meet the Team</h1>
+        </div>
+    </div>
     <div className="polaroid-container">
       {visibleMembers.map((member, index) => (
         <div 
           key={index} 
           className={`polaroid ${isPending && index === 0 ? 'fade-out' : ''}`} // Apply fade-out only to the first item
         >
-          <img src={member.image} alt={member.name} className="polaroid-image" loading="lazy" />
+          <img src={member.image} alt={member.name} className="polaroid-image" loading="eager" />
           <div className="polaroid-text">
             <h3 className="position-text font-bold">{member.name}</h3>
             <p className="role-text">{member.role}</p>
@@ -96,7 +96,7 @@ function Team() {
         </div>
       ))}
     </div>
-    <div className="flex justify-between mt-4 w-full max-w-6xl">
+    <div className="flex justify-center -mt-10 md:-mt-20 w-full max-w-6xl items-center">
       <img 
         src="/static/images/arrow-left.png" 
         alt="Previous" 
@@ -110,6 +110,7 @@ function Team() {
         className="nav-button cursor-pointer" 
       />
     </div>
+    
   </div>
  );
 }
