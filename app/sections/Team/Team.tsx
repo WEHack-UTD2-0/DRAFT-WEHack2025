@@ -55,7 +55,7 @@ function Team() {
     { name: 'Mansi Patel', role: 'Co-Director', image: '/static/images/team/mansi.webp' },
     { name: 'Clowie Garcia', role: 'Advisor', image: '/static/images/team/clowie.webp' },
     { name: 'Shivani Zala', role: 'Experience Director', image: '/static/images/team/shivani.webp' },
-    { name: 'Gayathri Jayaraman', role: 'Experience Coordinator', image: '/static/images/team/gayathri.webp' },
+    { name: 'Gayathri Jeyaraman', role: 'Experience Coordinator', image: '/static/images/team/gayathri.webp' },
     { name: 'Toby Estipona', role: 'Experience Coordinator', image: '/static/images/team/toby.webp' },
     { name: 'Shreya Ram', role: 'Industry Director', image: '/static/images/team/shreya.webp' },
     { name: 'Sanjana Kotha', role: 'Industry Coordinator', image: '/static/images/team/sanjana.webp' },
