@@ -42,16 +42,24 @@ div.carousel{
 @media screen and (max-width: 600px) {
 
     .slider {
-        height: 20rem;
-        width: 20rem;
+        height: 13rem;
+        width: 13rem;
+    }
+    .dot {
+        height: 2rem;
+        width: 2rem;
     }
     .text-container {
-        height: 28rem;
-        width: 20rem;
+        height: 16rem;
+        width: 13rem;
         margin-bottom: 4px;
+        p {
+            font-size: x-small;
+            line-height: 1.5;
+        }
     }
     .button-grp {
-        width: 20rem;
+        width: 13rem;
     }
     .sticker{
         width: 12rem;
