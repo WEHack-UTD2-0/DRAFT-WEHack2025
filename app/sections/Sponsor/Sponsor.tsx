@@ -2,16 +2,16 @@ import React from 'react';
 import './Sponsor.css';
 
 const sponsors = [
-  { default: '/static/images/sponsors/cbre_gold.png', hover: '/static/images/sponsors/cbre_gold.png', tier: 'gold' },
-  { default: '/static/images/sponsors/verizon_gold.svg', hover: '/static/images/sponsors/verizon_gold.svg', tier: 'gold' },
-  { default: '/static/images/sponsors/bcbstx_silver.png', hover: '/static/images/sponsors/bcbstx_silver.png', tier: 'silver' },
-  { default: '/static/images/sponsors/capital_one_silver.png', hover: '/static/images/sponsors/capital_one_silver.png', tier: 'silver' },
-  { default: '/static/images/sponsors/jpmc_bronze.png', hover: '/static/images/sponsors/jpmc_bronze.png', tier: 'bronze' },
-  { default: '/static/images/sponsors/statefarm_bronze.png', hover: '/static/images/sponsors/statefarm_bronze.png', tier: 'bronze' },
-  { default: '/static/images/sponsors/the_bridge_bronze.png', hover: '/static/images/sponsors/the_bridge_bronze.png', tier: 'bronze' },
-  { default: '/static/images/sponsors/codepath_bronze.png', hover: '/static/images/sponsors/codepath_bronze.png', tier: 'bronze' },
-  { default: '/static/images/sponsors/axxess_bronze.png', hover: '/static/images/sponsors/axxess_bronze.png', tier: 'bronze' },
-  { default: '/static/images/sponsors/dfw_atw_bronze.png', hover: '/static/images/sponsors/dfw_atw_bronze.png', tier: 'bronze' }
+  { default: '/static/images/sponsors/cbre_gold.png', hover: '/static/images/sponsors/cbre_gold.png', tier: 'gold', link: 'https://www.cbre.com/' },
+  { default: '/static/images/sponsors/verizon_gold.svg', hover: '/static/images/sponsors/verizon_gold.svg', tier: 'gold', link: 'https://www.verizon.com/' },
+  { default: '/static/images/sponsors/bcbstx_silver.png', hover: '/static/images/sponsors/bcbstx_silver.png', tier: 'silver', link: 'https://www.hcsc.com/' },
+  { default: '/static/images/sponsors/capital_one_silver.png', hover: '/static/images/sponsors/capital_one_silver.png', tier: 'silver', link: 'https://www.capitalone.com/' },
+  { default: '/static/images/sponsors/jpmc_bronze.png', hover: '/static/images/sponsors/jpmc_bronze.png', tier: 'bronze', link: 'https://www.jpmorganchase.com/' },
+  { default: '/static/images/sponsors/statefarm_bronze.png', hover: '/static/images/sponsors/statefarm_bronze.png', tier: 'bronze', link: 'https://www.statefarm.com/' },
+  { default: '/static/images/sponsors/the_bridge_bronze.png', hover: '/static/images/sponsors/the_bridge_bronze.png', tier: 'bronze', link: 'https://www.thebridge.com/' },
+  { default: '/static/images/sponsors/codepath_bronze.png', hover: '/static/images/sponsors/codepath_bronze.png', tier: 'bronze', link: 'https://www.codepath.org/' },
+  { default: '/static/images/sponsors/axxess_bronze.png', hover: '/static/images/sponsors/axxess_bronze.png', tier: 'bronze', link: 'https://www.axxess.com/' },
+  { default: '/static/images/sponsors/dfw_atw_bronze.png', hover: '/static/images/sponsors/dfw_atw_bronze.png', tier: 'bronze', link: 'https://www.dfwatw.org/' }
 ];
 
 function Sponsor() {
@@ -28,9 +28,16 @@ function Sponsor() {
         
         <div className='Sponsor-logos grid grid-cols-2 gap-6 w-full justify-items-center'>
           {sponsors.map((logo, index) => (
-            <div key={index} className={`Sponsor-logo ${logo.tier}`} style={{ '--hover-image': `url(${logo.hover})` } as React.CSSProperties}>
+            <a
+            key={index}
+            href={logo.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`Sponsor-logo ${logo.tier}`}
+            style={{ '--hover-image': `url(${logo.hover})` } as React.CSSProperties}
+          >
               <img src={logo.default} alt={`Sponsor ${index + 1}`} className='sponsor-img' />
-            </div>
+          </a>
           ))}
         </div>
       </div>
