@@ -28,31 +28,53 @@
   }
   
   .Sponsor-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* split into two columns for each tier */
+    gap: 1.5rem;
     width: 100%;
+    justify-items: center;
     padding: 0 10rem;
   }
   
   .Sponsor-logo {
-    background-color: #FFE9D7;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 calc(50% - 10rem); /* split into 2 columns */
-    box-sizing: border-box;
-    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #FFE9D7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: box-shadow 0.3s ease;
   }
   
-  .Sponsor-logo:hover {
+  .Sponsor-logo.gold {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .Sponsor-logo.silver {
+    width: 250px;
+    height: 170px;
+  }
+  
+  .Sponsor-logo.bronze {
+    width: 200px;
+    height: 140px;
+  }
+  
+  .Sponsor-logo.gold:hover {
+    box-shadow: 0rem 0rem 1.5rem rgb(255, 202, 86);
+  }
+
+  .Sponsor-logo.silver:hover {
     box-shadow: 0rem 0rem 1.5rem white;
   }
-  
+
+  .Sponsor-logo.bronze:hover {
+    box-shadow: 0rem 0rem 1.5rem rgb(141, 88, 9);
+  }
+
   .sponsor-img {
     max-width: 100%;
     height: auto;

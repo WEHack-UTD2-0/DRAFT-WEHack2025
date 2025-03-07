@@ -43,7 +43,7 @@ const dataColOne = [
 
     {
         question: "When and where is WEHack?",
-        answer: "WEHack 2025 will be held in person in the Engineering and Computer Science West (ECSW) building at the University of Texas at Dallas. WEHack 2025 dates will be released soon!",
+        answer: "WEHack 2025 will be held in person on Saturday, April 5th, and Sunday, April 6th, in the Engineering and Computer Science West (ECSW) building at the University of Texas at Dallas.",
     },
 
     {
@@ -53,7 +53,7 @@ const dataColOne = [
     
     {
         question: "How do I apply?",
-        answer: "Hackers can register via the link at the top of the page. Mentor and volunteer applications will be posted soon! Registration for WEHack 2025 will be released in December 2024.",
+        answer:    `Registration for WEHack 2025 is now open! Hackers can register via the link at the top of the page. Sign up to be a mentor <a href="https://tinyurl.com/mentor" target="_blank" class="text-blue-500 underline">here</a>. Volunteer applications will be posted soon!`,
     },
 
     {
